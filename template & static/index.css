@@ -1,0 +1,145 @@
+body{
+    background-color: #11161e !important;
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+html{
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%; 
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: table;
+}
+
+.fixed-bg h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.scroll-bg {
+  background-color: #11161e;
+  padding: 10px 70px;
+  color: #676767;
+}
+
+/* first section */
+
+.bg-1 {
+  background-image: url('https://lavkaremonta.ru/images/news/2020-07/f9e0dc60c1.jpg');
+}
+
+/* third section */
+
+.bg-2 {
+  background-image: url('https://i.gadgets360cdn.com/large/iphone_14_pro_dynamic_island_apple_1679376522196.jpg');
+}
+
+/* fifth section */
+
+.bg-3 {
+  background-image: url('https://www.digitaltrends.com/wp-content/uploads/2022/06/magsafe-new-macbook-air-2022-m2-copy.jpg?p=1');
+}
+
+.main-text{
+    font-family: 'Gabarito', sans-serif;
+}
+
+.head-text{
+    font-size: 100px;
+    color: white !important;
+}
+
+.bg-4 {
+    background-color: #11161e;
+}
+
+
+text-box{
+    margin-left: 44vw;
+    margin-top: 42vh;
+}
+
+.button:link,
+.button:visited {
+    background-color: #11161e;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.button-white::after {
+    background-color: #fff;
+}
+
+.button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.button-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
